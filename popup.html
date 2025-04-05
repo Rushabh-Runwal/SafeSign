@@ -1,17 +1,22 @@
-<!-- 
- ❌ Shares data with third parties
-⚠️ Collects your location
-✅ Mentions encryption
- -->
  <!DOCTYPE html>
  <html>
  <head>
+   <meta charset="UTF-8" />
+   <title>Safe Sign</title>
    <link rel="stylesheet" href="style.css" />
  </head>
  <body>
-   <h1>🔒 Privacy Score</h1>
-   <div id="score">Loading...</div>
-   <ul id="concerns"></ul>
+   <div class="container">
+     <h1>Safe Sign</h1>
+     <div id="score-box">
+       <span>Privacy Score:</span>
+       <div id="score-badge">
+         <span id="score">--</span>
+       </div>
+     </div>
+     <h3>Key Concerns</h3>
+     <ul id="concerns"></ul>
+   </div>
    <script src="popup.js"></script>
  </body>
  </html>
